@@ -1,0 +1,10 @@
+@use "../../shared/posts";
+@use "../../shared/utilities";
+
+.posts {
+  @include posts.posts;
+}
+
+.posts__title {
+  @include utilities.sr-only;
+}
