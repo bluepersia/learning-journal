@@ -1,0 +1,23 @@
+{
+  "name": "learning-journal",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "sass": "sass --watch scss:css"
+}
+,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluepersia/learning-journal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluepersia/learning-journal/issues"
+  },
+  "homepage": "https://github.com/bluepersia/learning-journal#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
