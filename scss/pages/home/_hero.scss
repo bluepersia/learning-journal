@@ -1,0 +1,58 @@
+@use "../../shared/utilities";
+
+.hero {
+  position: relative;
+  color: #fff;
+  padding-top: clamp(5.438rem, -2.27rem + 29.788vw, 17.93rem);
+  padding-bottom: clamp(1.563rem, 0.256rem + 5.049vw, 3.68rem);
+  font-size: 1rem;
+}
+
+.hero__inner {
+  @include utilities.u-container;
+  display: flex;
+  flex-direction: column;
+}
+.hero__inner *:not(.hero__image) {
+  max-width: 41rem;
+}
+
+.hero__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -2;
+}
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.31);
+  z-index: -1;
+}
+
+.hero__date,
+.hero__title {
+  margin-bottom: 0.56rem;
+}
+
+.hero__date {
+  @include utilities.u-uppercase;
+  order: 0;
+}
+
+.hero__title {
+  order: 1;
+  font-size: clamp(2rem, 1.692rem + 1.192vw, 2.5rem);
+}
+
+.hero__description {
+  order: 2;
+}

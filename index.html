@@ -9,155 +9,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!--- CSS --->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
-        <img
-          src="img/logo.png"
-          alt="Learning Journal Logo"
-          class="header__logo-img"
-        />
-        <h1 class="header__logo-title">Learning Journal</h1>
+      <div class="header__inner">
+        <div class="header__logo">
+          <img
+            src="img/logo.png"
+            alt="Learning Journal Logo"
+            class="header__logo-img"
+          />
+          <h1 class="header__logo-title">Learning Journal</h1>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav-link">Home</a>
+          <a href="about.html" class="header__nav-link">About</a>
+        </nav>
       </div>
-      <nav class="header__nav">
-        <a href="index.html" class="header__nav-link">Home</a>
-        <a href="about.html" class="header__nav-link">About</a>
-      </nav>
     </header>
 
     <main>
       <section class="hero">
-        <h2 class="hero__title">My new journey as a bootcamp student.</h2>
-        <p class="hero__description">
-          After several months of learning in the Frontend Developer Career
-          Path, I've made the big jump over to the Bootcamp to get expert code
-          reviews of my Solo Projects projects and meet like-minded peers.
-        </p>
-        <time datetime="2022-07-23" class="hero__date">July 23, 2022</time>
+        <div class="hero__inner">
+          <h2 class="hero__title">My new journey as a bootcamp student.</h2>
+          <p class="hero__description">
+            After several months of learning in the Frontend Developer Career
+            Path, I've made the big jump over to the Bootcamp to get expert code
+            reviews of my Solo Projects projects and meet like-minded peers.
+          </p>
+          <time datetime="2022-07-23" class="hero__date">July 23, 2022</time>
 
-        <img
-          src="img/bootcamp.png"
-          alt="A laptop on a desk, with an open window and the clear dusk sky visible"
-          class="hero__image"
-        />
+          <img
+            src="img/bootcamp.png"
+            alt="A laptop on a desk, with an open window and the clear dusk sky visible"
+            class="hero__image"
+          />
+        </div>
       </section>
       <section class="posts">
-        <h2 class="posts__title sr-only">Recent posts</h2>
-        <ul class="posts__list">
-          <li class="posts__item">
-            <article class="post-card">
-              <h3 class="post-card__title">Blog one</h3>
-              <p class="post-card__description">
-                I'm excited to start a new learning journey as a Scrimba
-                Bootcamp student! After several months of learning in the
-                Frontend Developer Career Path.
-              </p>
-              <time datetime="2022-07-23" class="post-card__date"
-                >July 23, 2022</time
-              >
-              <img
-                src="./img/laptop-code.png"
-                alt="A laptop with code on the screen"
-                class="post-card__image"
-              />
-            </article>
-          </li>
-          <li class="posts__item">
-            <article class="post-card">
-              <h3 class="post-card__title">Blog two</h3>
-              <p class="post-card__description">
-                I'm excited to start a new learning journey as a Scrimba
-                Bootcamp student! After several months of learning in the
-                Frontend Developer Career Path.
-              </p>
-              <time datetime="2022-07-23" class="post-card__date"
-                >July 23, 2022</time
-              >
-              <img
-                src="./img/lightbulb.png"
-                alt="A lightbulb held up to the sky at dusk"
-                class="post-card__image"
-              />
-            </article>
-          </li>
-          <li class="posts__item">
-            <article class="post-card">
-              <h3 class="post-card__title">Blog three</h3>
-              <p class="post-card__description">
-                I'm excited to start a new learning journey as a Scrimba
-                Bootcamp student! After several months of learning in the
-                Frontend Developer Career Path.
-              </p>
-              <time datetime="2022-07-23" class="post-card__date"
-                >July 23, 2022</time
-              >
-              <img
-                src="./img/purple-haze.png"
-                alt="A purple luminous gradient background"
-                class="post-card__image"
-              />
-            </article>
-          </li>
-          <li class="posts__item">
-            <article class="post-card">
-              <h3 class="post-card__title">Blog four</h3>
-              <p class="post-card__description">
-                I'm excited to start a new learning journey as a Scrimba
-                Bootcamp student! After several months of learning in the
-                Frontend Developer Career Path.
-              </p>
-              <time datetime="2022-07-23" class="post-card__date"
-                >July 23, 2022</time
-              >
-              <img
-                src="./img/dark-forest.png"
-                alt="A woman dancing in the sun, at the beach"
-                class="post-card__image"
-              />
-            </article>
-          </li>
-          <li class="posts__item">
-            <article class="post-card">
-              <h3 class="post-card__title">Blog five</h3>
-              <p class="post-card__description">
-                I'm excited to start a new learning journey as a Scrimba
-                Bootcamp student! After several months of learning in the
-                Frontend Developer Career Path.
-              </p>
-              <time datetime="2022-07-23" class="post-card__date"
-                >July 23, 2022</time
-              >
-              <img
-                src="./img/react-code.png"
-                alt="A laptop with React code on the screen"
-                class="post-card__image"
-              />
-            </article>
-          </li>
-          <li class="posts__item">
-            <article class="post-card">
-              <h3 class="post-card__title">Blog six</h3>
-              <p class="post-card__description">
-                I'm excited to start a new learning journey as a Scrimba
-                Bootcamp student! After several months of learning in the
-                Frontend Developer Career Path.
-              </p>
-              <time datetime="2022-07-23" class="post-card__date"
-                >July 23, 2022</time
-              >
-              <img
-                src="./img/laptop-design.png"
-                alt="A laptop with a web design project on the screen"
-                class="post-card__image"
-              />
-            </article>
-          </li>
-        </ul>
-        <button class="posts__view-more-btn">View More</button>
+        <div class="posts__inner u-container">
+          <h2 class="posts__title sr-only">Recent posts</h2>
+          <ul class="posts__list" id="posts-list"></ul>
+          <button class="posts__view-more-btn">View More</button>
+        </div>
       </section>
     </main>
 
@@ -165,5 +65,6 @@
       <span class="footer__title">My Learning Journal</span>
       <p class="footer__copyright">Copyright ©2025</p>
     </footer>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>
