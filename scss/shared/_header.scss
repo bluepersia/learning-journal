@@ -1,0 +1,43 @@
+@use "utilities";
+
+.header {
+  font-size: 1rem;
+  padding: 1.125rem 0;
+}
+
+.header__inner {
+  @include utilities.u-container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-img {
+  margin-right: 0.18rem;
+  width: 1.43rem;
+}
+
+.header__logo-title {
+  font-size: 0.875em;
+  font-weight: 700;
+  color: rgba(14, 14, 14, 1);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__nav-link {
+  @include utilities.u-uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(9, 9, 9, 1);
+  font-size: 0.75em;
+}

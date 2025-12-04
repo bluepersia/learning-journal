@@ -1,0 +1,32 @@
+@use "utilities";
+
+@mixin posts {
+  @include utilities.u-container;
+  padding: clamp(2.125rem, 1.394rem + 2.826vw, 3.31rem) 0;
+  font-size: 1rem;
+}
+
+.posts__list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr));
+  row-gap: 2.56rem;
+  column-gap: 1.62rem;
+}
+
+.posts__view-more-btn {
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: block;
+  font-weight: 700;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-size: 0.875em;
+  cursor: pointer;
+}
+
+.posts__view-more-btn:hover {
+  color: rgba(80, 80, 80, 1);
+}
